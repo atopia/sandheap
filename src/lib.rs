@@ -8,9 +8,9 @@ mod tests {
     }
 }
 
-pub fn sandheap_setup() {
+pub fn setup() {
     match unshare(CLONE_FILES | CLONE_FS | CLONE_NEWIPC | CLONE_NEWNET | CLONE_NEWNS | CLONE_NEWPID | CLONE_NEWUSER | CLONE_NEWUTS) {
-        Ok(_) => println!("set up sandheap"),
-        Err(e) => println!("unshare failed with error {}", e)
+        Ok(_) => println!("sandheap: set up"),
+        Err(e) => println!("sandheap: unshare failed with error {}", e)
     }
 }
