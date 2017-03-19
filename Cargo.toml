@@ -5,3 +5,4 @@ authors = ["Benjamin Lamowski <benjamin@lamowski.net>"]
 
 [dependencies]
 nix = "*"
+libc = "*"
